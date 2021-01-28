@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Ejercicio 20 JS</title>
+</head>
+
+<body>
+    <h1>Eventos</h1>
+    <p>Haz que cuando se haga click sobre el botón "Guardar", salté un alert con un mensaje de guardado.</p>
+    <button class="guardar" onclick="guarda()">Guardar</button>
+    <br>
+    <br>
+    <p>Cuando hagamos foco sobre este input se pondrá de color amarillo y cuando se lo quitemos cambiará de color</p>
+    <label for="nombre">Nombre</label>
+    <input for="nombre" type="text" class="name" onfocus="cambiaColor()" onfocusout="cambiaColor2()" />
+    <br>
+    <br>
+    <p>Dependiendo si escribamos una vocal o una consonante el contenido del input aparecerá de distinto color</p>
+    <label for="inputLetra">Escribe una letra</label>
+    <input for="inputLetra" type="text" class="letra" onkeypress="minusculaMayuscula(event)" />
+    <script src="main.js"></script>
+</body>
+
+</html>
